@@ -12,7 +12,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand / About */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-3">Hello Bajar</h2>
+          <h2 className="text-2xl font-bold text-white mb-3">
+            BlueMoon shopbd
+          </h2>
           <p className="text-sm">
             Best quality products at the best price. We deliver across
             Bangladesh.
@@ -51,9 +53,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
           <p className="text-sm">📍 Dhaka, Bangladesh</p>
           <p className="text-sm"> and</p>
-          <p className="text-sm">📍 Natore, Bangladesh</p>
-          <p className="text-sm">📞 +880 01849-666237</p>
-          <p className="text-sm">✉ hellobajar@gmail.com</p>
+          <p className="text-sm">📍 pabna, Bangladesh</p>
+          <p className="text-sm">📞 +880 01347-321979</p>
+          <p className="text-sm">✉ bluemoonshopbd@gmail.com</p>
         </div>
 
         {/* Social Media */}
@@ -98,7 +100,8 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-5">
-        © {new Date().getFullYear()} YourShop. All rights reserved.
+        © {new Date().getFullYear()} Bluemoonshopdb. All rights reserved. Powerd
+        by sobuj
       </div>
     </footer>
   );

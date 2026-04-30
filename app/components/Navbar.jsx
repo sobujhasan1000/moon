@@ -8,6 +8,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { BsTelephoneInbound } from "react-icons/bs";
+import Image from "next/image";
 
 export default function Navbar() {
   const [role, setRole] = useState(undefined);
@@ -56,13 +57,13 @@ export default function Navbar() {
     ],
     user: [
       { name: "All Products", href: "/" },
-      { name: "Bags", href: "/bags" },
-      { name: "Foods", href: "/foods" },
+      // { name: "Bags", href: "/bags" },
+      // { name: "Foods", href: "/foods" },
     ],
     guest: [
       { name: "All Products", href: "/" },
-      { name: "Bags", href: "/bags" },
-      { name: "Foods", href: "/foods" },
+      // { name: "Bags", href: "/bags" },
+      // { name: "Foods", href: "/foods" },
     ],
   };
 
@@ -78,30 +79,29 @@ export default function Navbar() {
     role === "admin"
       ? menuLinks.admin
       : role === "user"
-      ? menuLinks.user
-      : menuLinks.guest;
+        ? menuLinks.user
+        : menuLinks.guest;
 
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-green-500 shadow-md relative z-50">
+    <nav className="bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-800 shadow-lg border-b border-white/10 relative z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group select-none">
-          <div className="p-2 rounded-xl bg-gradient-to-r from-[#e94d10] via-[#14eb6e] to-[#258963] shadow-md group-hover:scale-105 transition-transform duration-300">
-            <BsTelephoneInbound className="text-2xl" />
-          </div>
+          <Image
+            src="/bluemoonlogo.png"
+            alt="Blue Moon Logo"
+            width={42}
+            height={42}
+            className="rounded-lg"
+          />
+
           <h1 className="text-2xl font-extrabold tracking-tight">
-            <span className="bg-gradient-to-r from-[#e94d10] via-[#8bf172] to-[#e44b24] bg-clip-text text-transparent">
-              Hello
-            </span>{" "}
-            <span className="bg-gradient-to-r from-[#e94d10] via-[#14eb6e] to-[#92e2c4] bg-clip-text text-transparent">
-              Bajar
-            </span>
+            <span className="text-sky-300">Blue</span>{" "}
+            <span className="text-white">Moon</span>
           </h1>
         </Link>
-
         {/* Right Section */}
         <div className="flex items-center space-x-3">
-          <Link href="/cart" className="relative text-2xl">
+          <Link href="/cart" className="relative text-2xl text-amber-500">
             <FaShoppingCart />
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
@@ -111,12 +111,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex space-x-4 items-center">
+          <div className="hidden md:flex space-x-4 items-center text-white">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-blue-700"
+                className="hover:text-pink-500"
               >
                 {link.name}
               </Link>

@@ -127,7 +127,7 @@ export default function ProductDetails() {
             <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 border-l-4 border-blue-600 pl-3">
               📝 Product Description
             </h2>
-            <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100">
+            <div className="bg-indigo-100 rounded-2xl shadow-md p-5 border border-gray-100">
               <div
                 className={`text-gray-700 leading-relaxed text-[15px] sm:text-base transition-all duration-300 prose prose-blue max-w-none ${
                   showFullDescription
@@ -153,19 +153,19 @@ export default function ProductDetails() {
 
             {/* Highlights */}
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
-              <div className="bg-gradient-to-br from-green-50 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition">
+              <div className="bg-gradient-to-br from-green-200 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition">
                 <CheckCircle className="mx-auto text-green-500 w-6 h-6 mb-1" />
                 <p className="text-sm font-medium text-gray-700">
                   Quality Checked
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition">
+              <div className="bg-gradient-to-br from-blue-200 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition">
                 <ShieldCheck className="mx-auto text-blue-500 w-6 h-6 mb-1" />
                 <p className="text-sm font-medium text-gray-700">
                   Genuine Product
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition col-span-2 sm:col-span-1">
+              <div className="bg-gradient-to-br from-orange-200 to-white shadow-sm rounded-xl py-3 hover:shadow-md transition col-span-2 sm:col-span-1">
                 <Truck className="mx-auto text-orange-500 w-6 h-6 mb-1" />
                 <p className="text-sm font-medium text-gray-700">
                   Fast Delivery
@@ -192,27 +192,27 @@ export default function ProductDetails() {
           onClick={handleOrder}
           className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-10 py-3 rounded-full shadow-lg animate-bounce hover:animate-none"
         >
-          🛍️ এখনই অর্ডার করুন
+          🛍️ অর্ডার করুন
         </button>
       </div>
 
       {/* ✅ Trust Section */}
       <div className="mt-16 grid sm:grid-cols-3 gap-5">
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-xl shadow-sm border hover:shadow-md transition">
+        <div className="flex flex-col items-center text-center p-5 bg-gradient-to-br from-cyan-300 to-white shadow-sm rounded-xl border hover:shadow-md transition">
           <Truck className="text-blue-500 w-8 h-8 mb-2" />
           <p className="font-semibold text-gray-800">Fast Home Delivery</p>
           <p className="text-gray-500 text-sm">
             We deliver products across Bangladesh quickly & safely.
           </p>
         </div>
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-xl shadow-sm border hover:shadow-md transition">
+        <div className="flex flex-col items-center text-center p-5 bg-gradient-to-br from-fuchsia-200 to-white rounded-xl shadow-sm border hover:shadow-md transition">
           <ShieldCheck className="text-green-500 w-8 h-8 mb-2" />
           <p className="font-semibold text-gray-800">Secure Payment</p>
           <p className="text-gray-500 text-sm">
             100% secure and trusted online transaction process.
           </p>
         </div>
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-xl shadow-sm border hover:shadow-md transition">
+        <div className="flex flex-col items-center text-center p-5 bg-gradient-to-br from-green-200 to-white rounded-xl shadow-sm border hover:shadow-md transition">
           <RefreshCcw className="text-orange-500 w-8 h-8 mb-2" />
           <p className="font-semibold text-gray-800">Easy Return Policy</p>
           <p className="text-gray-500 text-sm">
@@ -224,14 +224,14 @@ export default function ProductDetails() {
       {/* ✅ Company Info */}
       <div className="mt-16 bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-3xl shadow-inner text-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-3">
-          Why Choose <span className="text-blue-600">HelloBajar</span>?
+          Why Choose <span className="text-blue-600">Blue Moon shop BD</span>?
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
           We deliver authentic, high-quality products at fair prices. Our
           support team ensures customer satisfaction and seamless shopping. With
           fast delivery, secure payment, and reliable after-sale service —{" "}
-          <span className="font-semibold text-blue-700">HelloBajar</span> is
-          your trusted online shopping partner.
+          <span className="font-semibold text-blue-700">Blue Moon shop BD</span>{" "}
+          is your trusted online shopping partner.
         </p>
       </div>
     </div>
